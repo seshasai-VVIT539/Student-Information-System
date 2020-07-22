@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Information System</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style media="screen">
+    #asdf{
+      width: 60%;
+      justify-content:space-around;
+      margin-left: 20%;
+    }
+    form{
+      width: 30%;
+      margin-left: 20%;
+    }
+    th,td{
+      text-align: center;
+    }
+    .stdimg{
+      width: 10%;
+      height: 10%;
+      padding-left: 0px;
+    }
+    .contain{
+      width: 100%;
+      /* margin-left: 25%; */
+      justify-content: space-between;
+      display: flex;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Student Information System</h1>
+  </header>
+  <div class="contain">
+    <form action="chngpwd.php" method="post">
+      <input type="password" placeholder="Enter current password" name="cpwd" required>
+      <input type="password" placeholder="New Password" name="npwd1" required>
+      <input type="password" placeholder="Re-enter new Password" name="npwd2" required>
+      <button type="submit">submit</button>
+    </form>
+    <img class="stdimg" src="img\clg_logo.jpg" alt="unable to load photo">
+    <div>
+
+      <button  onclick="window.location.href='/PAS/logout.php'">Logout</button>
+
+    </div>
+  </div>
+</body>
+
+</html>

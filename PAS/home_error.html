@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Project Approval System</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style media="screen">
+    #asdf{
+      width: 60%;
+      justify-content:space-around;
+      margin-left: 20%;
+    }
+    form{
+      width: 30%;
+      margin-left: 20%;
+    }
+    th,td{
+      text-align: center;
+    }
+    .stdimg{
+      width: 10%;
+      padding-left: 0px;
+    }
+    .contain{
+      width: 100%;
+      /* margin-left: 25%; */
+      justify-content: space-between;
+      display: flex;
+    }
+    button{
+      padding: 14px 0px;
+    }
+      .msg{
+          background-color: rgb(255,232,232);
+          color: red;
+          font-size: 14px;
+          font-weight: bold;
+          width:20%;
+          margin-left:20%;
+      }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Student Information System</h1>
+  </header>
+  <div class="contain">
+    <form action="home.php">
+      <input type="text" placeholder="Enter Student ID" name="stdID" required>
+      <button type="submit">Get Details</button>
+    </form>
+    <img class="stdimg" src="img\clg_logo.jpg" alt="unable to load photo">
+    <div>
+
+      <button  onclick="window.location.href='/PAS/logout.php'">Logout</button>
+
+      <a href='chngpwd.html'><button>change password</button></a>
+    </div>
+  </div>
+  <p class="msg">Error:May be Data not found or Enter correct roll number<br></p>
+
+</body>
+
+</html>

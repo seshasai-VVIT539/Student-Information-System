@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Information System</title>
+    <meta name="Description" content="Project Approval System">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <style>
+    .loginmessage{
+        background-color: rgb(255,232,232);
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <h1 class>Student Information System</h1>
+    </header>
+    <div class="container">
+
+    <form action="fgpwd.php" method="post">
+      <input type="text" name="userid" placeholder="enter user id">
+      <p class="loginmessage">Incorrect user id</p>
+
+      <button type="submit" name="button">send OTP</button>
+    </form>
+
+    </div>
+  </body>
+</html>
